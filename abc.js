@@ -21,7 +21,7 @@ const menu = document.querySelector('.menu');
 const close = document.getElementById('close');
 const link = document.querySelector('.home-link');
 const link2 = document.querySelector('.about-link');
-const link3 = document.getElementById('menu-bar2');
+const link3 = document.getElementById('.menu-bar2');
 const desktopImgConatainer = document.createElement('div');
 const moreHerosContainer = document.createElement('div');
 const secondDivisionOfHeros = document.createElement('div');
@@ -63,6 +63,7 @@ const headingImgParaDiv5 = document.createElement('div');
 const headingImgParaDiv6 = document.createElement('div');
 const headingImgParaDiv7 = document.createElement('div');
 const headingImgParaDiv8 = document.createElement('div');
+const menu2 = document.querySelector('.menu2');
 
 const objDetail = [
   {
@@ -363,5 +364,5 @@ link2.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 link3.addEventListener('click', () => {
-  menu.classList.toggle('active');
+  menu2.classList.toggle('active');
 });
