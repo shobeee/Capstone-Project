@@ -38,9 +38,8 @@ create .github/workflows folder in your first commit for the feature branch then
 - LinkedIn: [LinkedIn](https://www.linkedin.com/m/in/xfitness-x-784212244)
 
 ### Live Demo
-
-https://shobeee.github.io/setup-mobile-first-2/
-Here is a live demo for my portfolio project website.
+<a href='https://shobeee.github.io/setup-mobile-first-2/'>
+Here is a live demo for my portfolio project website.</a>
 
 ## 🤝 Contributing
 
