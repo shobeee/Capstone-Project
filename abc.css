@@ -118,7 +118,6 @@ header {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: 20px;
   padding: 100px 60px;
   background-color: #d3d3d3;
 }
@@ -139,6 +138,10 @@ h1 {
   border: 2px solid white;
   margin-bottom: 0;
   padding: 20px;
+}
+
+.top-outline {
+  background-color: #d3d3d3;
 }
 
 .desktop-img-container {
@@ -197,16 +200,26 @@ h2 {
   align-items: center;
   border-bottom: 1px solid #d3d3d3;
   padding-bottom: 40px;
+  background-color: #272a31;
+}
+
+.partner-heading {
+  color: #d3d3d3;
+  font-size: 32px;
+  margin-top: 20px;
 }
 
 .partners-logo-container {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   margin-top: 2rem;
+  filter: invert(0.7);
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .partner-border {
-  border-top: 1px solid #272a31;
+  border-top: 1px solid #d3d3d3;
   width: 30px;
 }
 
@@ -223,18 +236,20 @@ h2 {
   flex-direction: column;
   list-style: none;
   gap: 5px;
-  margin-top: 20px;
+  margin-top: 50px;
+  padding: 0;
 }
 
-.events-list {
+.events-list {opacity: .9;
   width: 90%;
-  height: 60px;
-  background-color: grey;
-  display: flex;
+  height: 80px;
+  background-color: #d3d3d3;
+  display: grid;
   padding: 12px;
   gap: 12px;
-  justify-content: flex-start;
+  grid-template-columns: 1fr 1fr 3fr;
   align-items: center;
+  border: 1px solid #272a31;
 }
 
 .list-info {
@@ -276,9 +291,8 @@ h2 {
   background-repeat: no-repeat;
   background-color: #ec5242;
   position: relative;
-  width: 400px;
+  width: 350px;
   height: 300px;
-
 }
 
 .overlay2 {
@@ -287,7 +301,7 @@ h2 {
   background-repeat: no-repeat;
   background-color: #ec5242;
   position: relative;
-  width: 400px;
+  width: 350px;
   height: 300px;
 }
 
@@ -377,6 +391,10 @@ h2 {
   gap: 10px;
 }
 
+.nav-bar {
+  background-color: #d3d3d3;
+}
+
 #menu-bar {
   color: #272a31;
   padding: 22px;
@@ -438,7 +456,7 @@ h2 {
   font-size: 24px;
   line-height: 32px;
   margin-top: 25px;
-  border-top: 1px solid #ec5242;
+  border-top: 1px solid #d3d3d3;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -463,6 +481,10 @@ h2 {
 .menu-items a {
   text-decoration: none;
   font-size: 48px;
+}
+
+.partner-logo1 {
+  width: 20%;
 }
 
 #about {
@@ -602,9 +624,15 @@ h2 {
     padding: 16px 104px;
     gap: 20px;
   }
+
   .img-color {
-    color: #D3D3D3;
-    background-color: #D3D3D3;
+    color: #d3d3d3;
+    background-color: #d3d3d3;
+    filter: invert(1);
+  }
+
+  #logout {
+    margin-top: 10px;
   }
 
   .nav-logos {
@@ -621,7 +649,7 @@ h2 {
   .nav-head {
     font-size: 16px;
     margin-top: 0;
-    color: #D3D3D3;
+    color: #d3d3d3;
   }
 
   #menu-bar {
@@ -701,8 +729,13 @@ h2 {
   }
 
   .events-list {
+    display: flex;
     flex-direction: column;
     height: 250px;
+  }
+
+  .vote {
+    margin: 0;
   }
 
   .join-us {
@@ -713,6 +746,10 @@ h2 {
     font-size: 32px;
     color: #d3d3d3;
     border-bottom: 2px solid #d3d3d3;
+  }
+
+  #contact {
+    margin: 0;
   }
 
   .event-link-container {
@@ -763,7 +800,8 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border-bottom: 1px solid #272a31;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #272a31;
   }
 
   .overlay2 {
@@ -907,6 +945,15 @@ h2 {
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  .partners-logo-container {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .partner-logo1 {
+    width: 10%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -916,5 +963,9 @@ h2 {
 
   .nav-logos {
     display: none;
+  }
+
+  .partners-logo-container {
+    justify-content: space-evenly;
   }
 }
