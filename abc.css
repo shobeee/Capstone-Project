@@ -983,26 +983,22 @@ h2 {
   .hero_description {
     font-size: 12px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
   .nav-logos {
     display: none;
   }
-}
 
-  @media only screen and (max-width: 768px) {
-    .mobile {
-      display: none;
-    }
-
-    .nav-logos {
-      display: none;
-    }
-
-    .partners-logo-container {
-      justify-content: space-evenly;
-    }
-
-    #javascript-container {
-      display: none;
-    }
+  .partners-logo-container {
+    justify-content: space-evenly;
   }
 
+  #javascript-container {
+    display: none;
+  }
+}
