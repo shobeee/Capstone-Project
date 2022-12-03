@@ -816,10 +816,10 @@ h2 {
   }
 
   .desktop-img-container {
-    display: flex;
     flex-direction: row;
     padding: 12px;
     margin-top: 5rem;
+    display: none;
   }
 
   .more {
@@ -937,11 +937,6 @@ h2 {
     background-color: #d3d3d3;
   }
 
-  .more-hero-container {
-    display: flex;
-    flex-direction: column;
-  }
-
   #main-program {
     padding-left: 10%;
     padding-right: 10%;
@@ -955,18 +950,55 @@ h2 {
   .partner-logo1 {
     width: 10%;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .mobile {
-    display: none;
+  .heros_box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px 40px;
   }
 
-  .nav-logos {
-    display: none;
+  .hero_head2 {
+    margin: 0;
+    font-size: 14px;
   }
 
-  .partners-logo-container {
-    justify-content: space-evenly;
+  #javascript-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #d3d3d3;
+    padding: 20px;
+  }
+
+  .picture {
+    width: 100%;
+  }
+
+  .hero_head {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .hero_description {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .mobile {
+      display: none;
+    }
+
+    .nav-logos {
+      display: none;
+    }
+
+    .partners-logo-container {
+      justify-content: space-evenly;
+    }
+
+    #javascript-container {
+      display: none;
+    }
   }
 }

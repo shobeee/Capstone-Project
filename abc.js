@@ -366,3 +366,5 @@ link2.addEventListener('click', () => {
 link3.addEventListener('click', () => {
   menu2.classList.toggle('active');
 });
+
+// going to write a new code as per the reviewer requirement
