@@ -983,6 +983,10 @@ h2 {
   .hero_description {
     font-size: 12px;
   }
+  .nav-logos {
+    display: none;
+  }
+}
 
   @media only screen and (max-width: 768px) {
     .mobile {
